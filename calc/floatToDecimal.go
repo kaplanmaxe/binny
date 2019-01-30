@@ -8,6 +8,7 @@ import (
 
 const bias = 127
 
+// FloatToDecimal Converts an IEEE-754 floating point to decimal
 func FloatToDecimal(bin string) (string, error) {
 	if len(bin) != 32 {
 		return "", errors.New("Bit string must be 32 bits long")

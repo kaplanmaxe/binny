@@ -27,15 +27,15 @@ func TwosComplementBinary(bin string) (string, error) {
 }
 
 // TwosComplementDecimal takes a number in decimal and returns it's two's complement
-func TwosComplementDecimal(n int) (string, error) {
-	var bin string
-	var unsignedBinary string
-	var err error
-	if n > 0 {
-		bin, err = DecToBin(n)
-	} else {
-		unsignedBinary, err = DecToBin(n)
-		bin, err = TwosComplementBinary(unsignedBinary)
-	}
-	return bin, err
-}
+// func TwosComplementDecimal(n int) (string, error) {
+// 	var bin string
+// 	// var unsignedBinary string
+// 	var err error
+// 	if n > 0 {
+// 		bin, err = DecToBin(n)
+// 	} else {
+// 		bin, err = DecToBin(n)
+// 		// bin, err = TwosComplementBinary(unsignedBinary)
+// 	}
+// 	return bin, err
+// }

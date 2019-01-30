@@ -1,7 +1,10 @@
-.PHONY: run-dectobin run-bintodec run-twoscomplementbin
+.PHONY: run-dectobin run-bintodec run-twoscomplementbin test
 
 build:
 	@(go build -o ./bin/binny main.go)
+
+test:
+	@(go test ./...)
 
 run-dectobin: build
 	./bin/binny dectobin 10
