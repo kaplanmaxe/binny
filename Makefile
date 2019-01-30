@@ -11,3 +11,6 @@ run-bintodec: build
 
 run-twoscomplementbin: build
 	./bin/binny twoscomplementbin 00000001
+
+run-floattodec: build
+	./bin/binny floattodec 01000010011101110000000000000000
